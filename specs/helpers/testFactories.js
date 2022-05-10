@@ -1,10 +1,10 @@
-import FavButtonIdb from '../../src/scripts/utils/fav-button';
-import favoriteResto from '../../src/scripts/data/restaurant-fav';
+import FavButton from '../../src/scripts/utils/fav-button';
+import FavButtonIdb from '../../src/scripts/data/restaurant-fav';
 
 const createLikeButtonPresenterWithResto = async (resto) => {
-  await FavButtonIdb.init({
+  await FavButton.init({
     likeButtonContainer: document.querySelector('#likeButtonContainer'),
-    favoriteMovies: favoriteResto,
+    favoriteMovies: FavButtonIdb,
     resto,
   });
 };
