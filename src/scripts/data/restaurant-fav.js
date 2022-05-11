@@ -16,9 +16,6 @@ const favoriteResto = {
     // eslint-disable-next-line consistent-return
     return (await dbPromise).get(OBJECT_STORE_NAME, id);
   },
-  async getRestaurant() {
-    return (await dbPromise).getAll(OBJECT_STORE_NAME);
-  },
   async getAllResto() {
     return (await dbPromise).getAll(OBJECT_STORE_NAME);
   },
