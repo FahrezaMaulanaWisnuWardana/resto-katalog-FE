@@ -6,7 +6,7 @@ const restaurantList = (data) => {
             <div class="card-header">
                 <div class="card-crumb">Kota, ${data.city}</div>
                 <a href=${`/#/detail/${data.id}`}>
-                    <img src="${CONFIG.BASE_IMAGE_M_URL + data.pictureId}" alt="${data.name}">
+                    <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_M_URL + data.pictureId}" alt="${data.name}">
                 </a>
             </div>
             <div class="card-body">
@@ -23,7 +23,7 @@ const likedRestaurantList = (data) => {
             <div class="card-header">
                 <div class="card-crumb">Kota, ${data.city}</div>
                 <a href=${`/#/detail/${data.id}`}>
-                    <img src="${CONFIG.BASE_IMAGE_M_URL + data.pictureId}" alt="${data.name}">
+                    <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_M_URL + data.pictureId}" alt="${data.name}">
                 </a>
             </div>
             <div class="card-body">
@@ -39,7 +39,7 @@ const detailRestaurant = (data) => {
     <div class="card w-50 m-auto">
         <div class="card-header">
             <div class="card-crumb">Kota, ${data.city}</div>
-            <img src="${CONFIG.BASE_IMAGE_M_URL + data.pictureId}" class="w-full" alt="${data.name}">
+            <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_M_URL + data.pictureId}" class="w-full" alt="${data.name}">
         </div>
         <div class="card-body">
             ${data.categories.map((categories) => { return ` <div class="categories">${categories.name}</div> `; })}

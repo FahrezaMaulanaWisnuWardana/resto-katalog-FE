@@ -3,6 +3,7 @@ var serviceWorkerOption = {
     "/src/assets/logo.png",
     "/src/public/images/heros/hero-image_2.jpg",
     "/0.bundle.js",
+    "/1.bundle.js",
     "/bundle.js",
     "/favicon.png",
     "/manifest.json",

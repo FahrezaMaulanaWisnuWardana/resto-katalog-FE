@@ -8,6 +8,9 @@ import swRegister from './utils/sw-register';
 import '../components/appBar';
 import '../components/jumbotron';
 
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 const app = new App({
   button: document.querySelector('#hamburger'),
   drawer: document.querySelector('#drawer'),
